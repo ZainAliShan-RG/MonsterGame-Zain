@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip jumpSound;
 
     
+    // Methods Here
+    
     private void Start()
     {
         _isWalkingHash = Animator.StringToHash(_isWalking);
@@ -84,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
     }
-
+    
     private void JumpPlayer()
     {
         if (Input.GetKey(KeyCode.Space) && _isGrounded)
